@@ -17,9 +17,12 @@ class App extends React.Component {
 
     //keep previous state before state getting update
     this.setState((prevState, prevProps) => {
-      return { myState: prevState.myState + 1 }
+      console.log(prevState);
+      return { myState: prevState.myState + 1 };      
     },
       () => console.log(this.state.myState));
+
+  
   }
 
   render() {
